@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:healthy_bites/components/rectangle_button.dart';
+import 'package:healthy_bites/components/rectangle_button2.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -6,27 +8,24 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.purple,
       body: Column(
         children: [
           Padding(
             padding: const EdgeInsets.fromLTRB(60, 320, 4, 4),
-            child: Container(
-              height: 48,
-              width: 300,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(2),
-                color: Colors.black,
-              ),
-              child: const Text(
-                "Sign up with email",
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 22,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-            ),
+            child: RectangleButton(text: "Sign up with email"),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(60, 40, 4, 4),
+            child: RectangleButton2(text: "Continue with Google"),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(60, 40, 4, 4),
+            child: RectangleButton2(text: "Continue with Facebook"),
+          ),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(60, 40, 4, 4),
+            child: RectangleButton2(text: "Continue with Apple"),
           ),
         ],
       ),
