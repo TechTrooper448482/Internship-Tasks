@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:healthy_bites/login_screen.dart';
+import 'package:healthy_bites/step_1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       color: Colors.purple,
       routes: {
         '/': (context) => const LoginScreen(),
+        '/step1': (context) => const Step1(),
       },
     );
   }
