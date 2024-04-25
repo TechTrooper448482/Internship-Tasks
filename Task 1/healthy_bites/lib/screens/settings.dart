@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:meals_app/providers/settings_provider.dart';
+import 'package:healthy_bites/providers/settings_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 
