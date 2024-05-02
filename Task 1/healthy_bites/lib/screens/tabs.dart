@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:healthy_bites/providers/settings_provider.dart';
 import 'package:healthy_bites/screens/categories.dart';
 import 'package:healthy_bites/screens/settings.dart';
 import 'package:healthy_bites/screens/meals.dart';
 import 'package:healthy_bites/widgets/main_drawer.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:healthy_bites/providers/favorites_provider.dart';
-import 'package:healthy_bites/providers/settings_provider.dart';
 
 const kInitialFilters = {
   Filter.glutenFree: false,

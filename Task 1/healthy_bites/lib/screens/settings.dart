@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:healthy_bites/providers/settings_provider.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-
 class FiltersScreen extends ConsumerWidget {
   const FiltersScreen({super.key});
 
